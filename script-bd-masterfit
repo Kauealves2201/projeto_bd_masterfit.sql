@@ -81,3 +81,23 @@ INSERT INTO suplemento_favoritos (id_usuario, id_suplemento, data_adicao)
 VALUES (1, 3, '2026-10-16 11:00:15');
 
 SELECT * FROM suplemento_favorito
+
+
+CREATE TABLE usuario(
+ id_usuario SERIAL PRIMARY KEY,
+ nome varchar(100)not.null,
+ email varchar(100)not.null,
+ senha_hash varchar(255)not.null,
+ data_nascimento (date)not.null,
+ tipo_perfil varchar(255)not.null,
+ fcm_toke varchar(255),
+ data_cadastro timestamp
+ );
+
+
+ SELECT * FROM usuario;
+
+
+  INSERT INTO usuario (nome,email,cpf) VALUES ('murilo', 'murilo.nascimento.silva26@escola.pr.gov.br', '6766777667');
+
+ 
